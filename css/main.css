@@ -1,0 +1,1199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+/* Warning button styling */
+.warning-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.warning-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 80%;
+  box-sizing: border-box;
+}
+
+.warning-message {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+
+.warning-submessage {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.warning-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.warning-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+  
+.header {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    text-align: center; /* Center text */
+    flex-wrap: wrap;
+    background-color: #f8f8f8; 
+}
+
+.tm-logo {
+    width: 16.3%; /* Adjust the width as needed */
+    margin: 0 auto; /* Space between logo and text */
+    transform: translateY(30px);
+    margin-left: 20px;
+    height: auto;
+}
+
+.tm-logo-text {
+    font-family: 'Georgia', serif; /* Example of a royal text style */
+    font-size: 5.5vw; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000000; /* Adjust text color as needed */
+}
+
+
+.tm-nav{
+   max-width: 100%;
+   border: 2px solid #3a382e;
+   border-radius: 8px; /* Rounded corners */
+   background-color: #fc7f7f; /* Background color for navigation */
+   display: flex;
+   justify-content: center; /* Center navigation items horizontally */
+   margin: 30px auto 5px auto;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+.tm-nav div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap; /* Allow wrapping on smaller screens */
+
+}
+
+.tm-nav div ul li{
+    position: relative; /* Position for circle image */
+    margin: 0 15px; /* Space between list items */
+    text-align: center; /* Center text inside list item */  
+}
+
+
+.tm-nav div ul li a{
+    font-family: 'Georgia', serif; /* Apply the new font family */
+    font-size: 1.8vmax; /* Adjust font size based on viewport width */
+    font-weight: bold;
+    padding: px 9.8px; /* Adjust padding for better spacing */
+    text-decoration: none;
+    color: #333; /* Dark color for better readability */
+    line-height: 50px;
+    display: block;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for effects */
+    
+}
+
+/* Hover effect for navigation links */
+.tm-nav ul li a:hover {
+    color: #fcfbfc; /* Change color on hover */
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+/* Underline effect */
+.tm-nav ul li a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fffdfe; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for underline */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the underline below the text */
+}
+
+.tm-nav ul li a:hover::before {
+    width: 100%; /* Expand underline on hover */
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .tm-logo {
+        width: 25%; /* Increase logo size for smaller screens */
+    }
+
+    .tm-logo-text {
+        font-size: 6vw; /* Increase font size for smaller screens */
+    }
+
+    .tm-nav div ul li a {
+        font-size: 2.5vmax; /* Increase font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tm-logo {
+        width: 35%; /* Further increase logo size for very small screens */
+    }
+
+    .tm-logo-text {
+        font-size: 7vw; /* Further increase font size for very small screens */
+    }
+
+    .tm-nav div ul li a {
+        font-size: 3vmax; /* Further increase font size for very small screens */
+    }
+}
+
+/*header ends here and sections start*/
+
+
+/* slider */
+
+.tm-slider{
+    position: relative;
+}
+
+
+.tm-sliderimage{
+    width: 100%;
+   display: block;
+   
+   
+}
+.bold{
+    padding-bottom: 5px;
+    font-size: 3vw;  
+    font-weight: 900;
+}
+.simple{
+    font-size: 2.5vw;  
+}
+
+/* .tm-slidertext{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;     
+    transform: translate(-50%, -50%);
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; 
+
+} */
+
+
+/* room */
+
+
+.tm-rooms:focus {
+    outline: none;
+}
+.tm-rooms a:focus {
+    outline: none;
+}
+
+.tm-rooms{
+    display: block;
+    background: #353535;
+    max-width: 33.33%;
+    width: 33.33%;
+}
+
+
+.tm-rooms img {
+    width: 100%;         /* Make the width 100% of the container */
+    height: 250px;       /* Set a fixed height for all images */
+    object-fit: cover;   /* Ensures the image covers the container without distortion */
+    display: block;      /* Remove any inline spacing issues */
+    border: 2px solid #ccc; /* Add a border around the images */
+    margin-bottom: 10px; /* Add some space below each image */
+    box-sizing: border-box; /* Include border and padding in the element's total width and height */
+    /* border-radius: 8px;   Optional: Add rounded corners to the images  */
+}
+
+/* Adjust the height for smaller screens */
+@media (max-width: 768px) {
+    .tm-rooms img {
+        height: 150px;
+    }
+}
+
+/* Further adjust the height for very small screens */
+@media (max-width: 480px) {
+    .tm-rooms img {
+        height: 100px;
+    }
+}
+
+
+
+
+.tm-rooms p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+padding: 5%;
+
+  
+}
+
+.tm-rooms a{
+    text-decoration: none;
+}
+
+.tm-rooms a p:hover{
+    color: #ec3c6a;
+
+
+}
+
+.s{
+    padding-bottom: 1%;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* services */
+
+.tm-service{
+    max-width: 30%;
+    width: 30%;
+    margin: 1.5% 12% 1.5% 10%;  
+}
+
+.tm-servicesection{
+    display: flex;
+}
+
+.tm-serimage{
+    display: inline-block;
+    max-width: 20%;
+    width: 10%;
+    height: auto;
+padding-bottom: 10%;
+
+
+}
+
+.tm-service div{
+    display: inline-block;
+
+    max-width: 75%;
+    padding: 5%;
+}
+
+.tm-service p{
+    font-size: 1.5vmax;
+    
+}
+.tm-service .b{
+    padding-bottom: 2%;
+    font-weight: 700;
+}
+
+
+/* review */
+
+.review {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ec3c6a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tm-stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.country {
+    font-style: italic;
+    color: #888;
+}
+
+.review-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-review-button {
+    display: table;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-review-button:hover {
+    background-color: #d12b54;
+}
+
+/* Add Review Form styles */
+.add-review {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-review h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-review form label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.add-review form input,
+.add-review form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-review form button {
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review form button:hover {
+    background-color: #d12b54;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .tm-logo {
+        width: 25%;
+    }
+
+    .tm-logo-text {
+        font-size: 1.5em;
+    }
+
+    .tm-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tm-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .review,
+    .add-review {
+        width: 90%;
+    }
+
+    .review-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review-content {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tm-logo {
+        width: 35%;
+    }
+
+    .tm-logo-text {
+        font-size: 1.2em;
+    }
+
+    .tm-nav ul li a {
+        font-size: 0.9em;
+    }
+
+    .review-item {
+        padding: 10px;
+    }
+
+    .review-content {
+        font-size: 0.9em;
+    }
+
+    .add-review h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+ /* Make reservation */
+    
+ .tm-res{
+    background: #cc4151;
+    padding: 2%;
+}
+
+
+.tm-resbutton p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+     padding: 2%;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+   
+}
+.tm-resbutton a{
+     text-decoration: none;
+}
+
+.tm-resbutton p:hover{
+    color: #ec3c6a;
+    background: #fff;
+}
+
+
+
+
+/* footer */
+
+.tm-footer{
+     background: #211f17;
+    display: block;
+    padding: 20px;
+    position: relative;
+
+}
+
+.tm-us{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+    margin: 2% 0 2% 4%
+}
+
+.tm-address{
+    display: inline-table;
+    max-width: 30%;
+    width: 30%;
+     margin: 2% 0 2% 25%
+}
+
+.tm-us .bold, .tm-address .bold{
+    color: #ec3c6a;
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding-bottom: 4%;
+}
+
+.tm-us p, .tm-address p{
+    color: #fff;
+    font-size: 1.2vw;
+}
+
+.tm-media{
+   display: inline;
+    margin: 0 0 0 59%;
+ 
+
+}
+.tm-media img{
+  margin: 0.5%;
+    width: 3%;
+    height: auto;
+    
+}
+
+.tm-up
+{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 3%;
+    height: auto;
+    
+}
+
+.tm-review:focus{
+    outline: none;
+}
+
+.tm-revcon:focus{
+    outline: none;
+}
+
+
+/* Explore page */
+
+.tm-main{
+      background: #cc4151;
+    padding: 0.001%;
+}
+
+.tm-main p{
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 4vw;
+     padding: 2%;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/* Explore sections */
+
+.tm-exp1,
+.tm-exp2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(135deg, #353535, #1a1a1a);
+    position: relative;
+}
+
+.tm-exp1:hover,
+.tm-exp2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tm-exp1 img,
+.tm-exp2 img {
+    max-width: 200%;
+    width: auto;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fit in the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tm-exp1 img:hover,
+.tm-exp2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.tm-exp1 p,
+.tm-exp2 p {
+    font-size: 3em; /* Larger text size */
+    color: #fff; /* Brighter text */
+    line-height: 1.6;
+    max-width: 70%;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.tm-exp1 p:hover,
+.tm-exp2 p:hover {
+    color: #ec3c6a;
+    transform: translateY(-10px);
+}
+
+.tm-exp1 {
+    flex-direction: row;
+}
+
+.tm-exp2 {
+    flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .tm-exp1,
+    .tm-exp2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tm-exp1 img,
+    .tm-exp2 img,
+    .tm-exp1 p,
+    .tm-exp2 p {
+        max-width: 80%;
+    }
+
+    .tm-exp1 img,
+    .tm-exp2 img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tm-exp1 p,
+    .tm-exp2 p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tm-exp1 p,
+    .tm-exp2 p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .tm-exp1 img,
+    .tm-exp2 img {
+        margin-bottom: 15px;
+    }
+}
+
+/* Overlay Effect */
+.tm-exp1::before,
+.tm-exp2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+    z-index: 1;
+    opacity: 0;
+}
+
+.tm-exp1:hover::before,
+.tm-exp2:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* rooms page */
+
+.tm-roomsection{
+    display: flex;
+}
+
+.tm-room1{
+    max-width: 33.33333%;
+    width: 33.333333%;
+    background: #353535;
+    
+display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.tm-room1 p{
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    z-index: 2;
+    position: relative;
+}
+
+
+.tm-roomimage{
+    max-width: 100%;
+    width: 100%;    
+}
+
+.tm-trans{
+    display: inline-block;
+    position: absolute;
+    top: 78%; /*78*/
+   color: #fff;
+     max-width: 100%;
+    width: 100%;
+    height: 0%; /*0*/
+     background: rgba(53, 53, 53,0.7);
+    opacity: 0; /*0*/
+}
+
+.tm-trans p{
+    font-size: 1.8vw;
+
+}
+.tm-trans div{
+    display: inline-table;
+    width: 40%;
+    max-width: 40%;
+    margin: 2%;
+}
+
+.tm-trans div .bold{
+    color: #ff8d9a;
+
+}
+
+
+.tm-room1:hover .tm-trans{
+ 
+    top:30%;
+   
+    transition: top 1s, opacity 1s, height 1s;
+       opacity: 1;
+     height: 50%;
+    z-index: 1;
+}
+
+
+
+/* booking */
+
+.tm-booking
+{
+     background: #353535;
+    position: relative;
+}
+.tm-form1, .tm-form2{
+   
+    padding: 2% 5%;
+    
+}
+
+ div.vertical-line{
+      width: 0.15%; 
+      background-color:  #ec3d68; 
+      height: 90%; 
+      position: absolute;
+         top: 6%;
+    left: 50%;
+    }
+
+.tm-form1{
+    float:left;
+/*
+    max-width: 39.5%;
+    width: 39.5%;
+*/
+    
+     max-width: 40%;
+    width: 40%;
+    
+    
+}
+
+.tm-form2{
+    float:right;
+/*
+    max-width: 39.5%;
+    width: 39.5%;
+*/
+    
+    
+     max-width: 40%;
+    width: 40%;
+   
+}
+
+input, select, textarea,
+input::-webkit-input-placeholder {
+    font-size: 2vw;
+}
+
+input, select, textarea{
+    color: #ec3d68;
+}
+
+input::-webkit-input-placeholder{
+    color: #f17c94;
+}
+
+textarea::-webkit-input-placeholder{
+    color: #f17c94;
+}
+
+
+label{
+     font-size: 2vw;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.tm-booking::after{
+    content:" ";
+    display: block;
+    clear: both;
+}
+
+input[type=text]:nth-child(1),input[type=email],textarea{
+    display: block;
+    margin: 5%;
+    padding: 1% 3%;
+    width: 80%;
+   
+}
+
+textarea {
+    max-width: 80% ;
+    resize: none;
+    
+}
+
+#rooms{
+    display: inline-block;
+    margin: 5%;
+    padding: 1% 3%;
+    width: 55%;
+}
+
+#inlinelable{
+    display: inline-block;
+    margin: 5%;
+    
+}
+
+
+
+
+.tm-num1, .tm-num2{
+    display: inline-block;
+
+    max-width: 39%;
+    width: 39%;
+    margin: 5%;
+}
+
+#number1 , #number2{
+    width:30%;
+    padding: 3% 8%;
+    margin-top: 5%;
+  
+    text-align: center;
+}
+
+
+.range{
+    font-size: 2vw;
+    margin-top: 5%;
+    margin-bottom: 50%;
+    padding: 1% 3%;
+    width: 70%;
+}
+
+
+input[type=submit]{
+    display: block;
+    background: #353535;
+    padding: 1% 3%;
+     color: #fff;
+    border: 1px solid #fff;
+
+ 
+
+}
+
+#sub{
+     margin-left: 70%;
+  
+}
+
+#sub2{
+     margin-left: 5%;
+  
+}
+
+input[type=submit]:hover{
+    color: #ec3d68;
+    border: 1px solid #ec3d68;
+}
+
+input[type=submit]:focus{
+    outline: none;
+}
+
+.arrival {
+    display: block;
+    margin-top: 5%;
+}
+
+.here {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+#place{
+     margin-top: 5%;
+    margin-left: 3%;
+    width:5%;
+    max-width: 5%;
+}
+
+
+
+#map{
+    margin-top: 5%;
+   height: 335px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+.tm-imgslider{
+    position: relative;
+}
+
+.left, .right{
+    position: absolute;
+    width: 1.5%;
+    max-width: 1.5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+     opacity:0;
+   
+}
+
+.left:hover, .right:hover{
+     opacity:1;
+    -webkit-transition: opacity .25s ease-in-out .0s;
+    transition: opacity .25s ease-in-out .0s;
+}
+
+.left{
+    top: 10%;
+    left: 1%;
+}
+
+.right{
+    top: 10%;
+    right: 1%;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+#scrollUp {
+  bottom: 100px;
+  right: 40px;
+  padding: 1%;
+  background: #211f17;
+    border : 3px solid;
+  color: #fff;
+   opacity: 0.7;
+    border-radius: 50%;
+    font-size: 1.5vw;
+        width: 1.5%;
+        text-align: center;
+    
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center the gallery items */
+    padding: 20px; /* Add padding around the gallery */
+    background-color: #f5f5f5; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the gallery */
+}
+
+.gallery-item {
+    width: 200px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    overflow: hidden; /* Ensure overflow is hidden */
+    border-radius: 10px; /* Rounded corners for gallery items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around items */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Ensure image corners match the container's rounded corners */
+    transition: opacity 0.3s; /* Smooth transition for image opacity */
+}
+
+.gallery-item img:hover {
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
