@@ -1,4 +1,4 @@
-Harsidhi Haweli Homestay Website 🏡✨
+# 🏡 Harsidhi Haweli Homestay Website 🌟
 
 Welcome to the Harsidhi Haweli Homestay website repository, a project that captures the charm of traditional Rajasthani hospitality! This website serves as a digital gateway to a heritage homestay in the heart of Rajasthan, offering a modern yet culturally immersive experience to visitors.
 
