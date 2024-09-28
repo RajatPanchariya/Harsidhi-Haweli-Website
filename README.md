@@ -1,23 +1,31 @@
-# Harsidhi-Haweli-Website
-Welcome to the Harsidhi Haweli Homestay website repository, a project that captures the charm of traditional Rajasthani hospitality! This website serves as a digital gateway to a heritage homestay in the heart of Rajasthan, offering a modern yet culturally immersive experience to visitors.
+# sumitmangela.github.io/hotel
 
-🌟 Features:
+It is a front-end for a simple hotel booking site. The site is developed using HTML/CSS and jquery plugins are used to provide extra features. There are total 5 webpages of the website.
 
-Sleek, Responsive Design: The website is crafted with HTML5 and CSS3 for a smooth, seamless experience across all devices—whether you’re exploring on your phone, tablet, or desktop.
+* Home Page - 
+It is a indroductionary page about the hotel itself. It contains various images of the hotel which are slided in a conware fashion using an image slider. It also contains details about the rooms and a link to rooms page. It also shows free features that hotel provides to every visitor. Some reviews that hotel recieved over the years are also represented in a conware fashion. and finally a button which links to hotel booking facility.
+The image sliders (carousels) for rooms and reviews are draggable for the swift use of mobile users.
+Every page execpt booking page has a button which links redirects user to booking facility.
+Footer of every page contains some details about the hotel and address of the hotel along with the social links for the hotel.
+Scroll to top facility is also provided which redirects user to the top of the page along with a subtle animation when user clicks on a button. 
 
-Explore Rooms & Amenities: Dive into detailed descriptions of the elegant rooms, each accompanied by vibrant images and a list of amenities. All the information you need to book your perfect stay is right at your fingertips.
+* Explore Page - 
+It is a descriptive page for the various features hotel provides. New features can be easily added along with an image. The page follows principle of Minimalism and provides just the features nothing more.
 
-Discover Local Attractions: From historical landmarks to cultural hotspots, the website highlights nearby attractions to help you make the most of your visit.
+* Rooms Page - 
+This page provides all the details about the rooms available in the hotel. When you hover over any of the room the details of that room will pe presented to you with a linear transition which is achieved with pure CSS3.
 
-Easy Contact & Booking: Need more details? The contact section provides easy access to reach out for inquiries and reservations. We've integrated an interactive map to help you find your way to this beautiful homestay.
+* Booking Page - 
+This is the page which has the booking faciltiy of the hotel. The form contains inputs for name, email-id, type of rooms, Number of rooms, and number of visitors. For number of rooms and visitors spinner buttons are provided (-,+) using a jquery plugin. For Date of Arrival and departure a datepicker jquery plugin is used.
 
-🛠 Technologies Used:
-
-HTML5: For a clean, well-structured layout.
-CSS3: To ensure the site looks great on all devices, with responsive design and modern styling.
-JavaScript: Adds functionality and interactivity, enhancing user experience with smooth navigation and image galleries.
+* Contact Page - 
+This page can be used to contact the hotel by filling a simple form. It also serves purpose of providing the location of hotel in google maps. The location of hotel and zoom levels of the map can be easily modified.
 
 
-🎯 Purpose: 
+# Jquey Plugins used for the website
 
-This website showcases how modern web development tools can be used to preserve and promote cultural heritage. It’s perfect for homestays, boutique hotels, or anyone in the hospitality industry aiming to provide a rich, engaging online experience for potential guests.
+* Image slider - Slick Slider - https://github.com/kenwheeler/slick
+* Scroll to top - Scrollup - https://github.com/markgoodyear/scrollup
+* Datepicker - pickmeup - https://github.com/nazar-pc/PickMeUp
+* Spinner buttons - Handle Counter - https://github.com/nick-running/handle-counter
+
